@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="settings-block">
+            <label for="vertical" class="shadowLabel">Vertical</label>
+            <input type="range" max="100" value="0" min="-100" class="vertical shadowInput" id="vertical">
+            <label for="horizontal" class="shadowLabel">Horizontal</label>
+            <input type="range" max="100" value="0" min="-100" class="horizontal shadowInput" id="horizontal">
+            <label for="blur" class="shadowLabel">Blur</label>
+            <input type="range" max="200" value="0" class="blur shadowInput" id="blur">
+            <label for="spread" class="shadowLabel">Spread</label>
+            <input type="range" max="200" value="0" class="spread shadowInput" id="spread">
+            <label for="color" class="shadowLabel">Color</label>
+            <input type="color" class="color" id="color" value="#000000">
+            <button id="reset" class="resetBtn btn-9">Reset</button>
+        </div>
+        <div class="box">
+            <p class="box-shadow-code">
+                box-shadow: 0 0 0 0 black;
+            </p>
+        </div>
+    </div>
+<script src="script.js"></script>
+</body>
+</html>
